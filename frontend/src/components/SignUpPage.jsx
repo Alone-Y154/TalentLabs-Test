@@ -14,7 +14,7 @@ const SignUpPage = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('http://localhost:5000/api/auth/register', formData);
+      const res = await axios.post('https://talent-labs-test-api.vercel.app/api/auth/register', formData);
       console.log(res.data);
       if (res.data.message === 'User created successfully') {
         // Redirect to login page or display a success message
