@@ -10,7 +10,11 @@ dotenv.config();
 connectDB();
 
 const app = express();
-app.use(cors());
+app.use(cors({
+    origin: ["https://talentlabs-test-web.netlify.app"],
+    methods: ["POST", "GET"],
+    credentials: true
+}));
 app.use(express.json());
 
 app.post('/validate-token', (req, res) => {
