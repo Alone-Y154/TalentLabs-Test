@@ -23,7 +23,7 @@ const Courses = () => {
     // Fetch courses if the token is available
     const fetchCourses = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/courses/courses', {
+        const response = await axios.get('http://talent-labs-test-api.vercel.app/api/courses/courses', {
           headers: {
             Authorization: `${storedToken}`, // Ensure proper format with Bearer prefix
           },
