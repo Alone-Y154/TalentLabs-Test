@@ -19,10 +19,6 @@ This is a React-based web application for Talent Labs, hosted on Netlify. It inc
 - **Responsive Design**: 
   - Optimized for both desktop and mobile views.
 
-## Folder Structure
-
-/my-react-app │ ├── /public │ ├── index.html # Main HTML file │ ├── favicon.ico # Favicon for the app │ ├── manifest.json # Web app manifest │ ├── robots.txt # Robots.txt for SEO │ └── _redirects # Netlify redirects file │ ├── /src │ ├── /components # React components │ ├── /pages # Pages (Login, Signup, etc.) │ ├── /assets # Images, fonts, and other assets │ ├── /hooks # Custom hooks │ ├── /styles # CSS or SCSS files │ ├── App.js # Main App component │ ├── index.js # Entry point │ └── routes.js # Route definitions (if separated) │ ├── .env # Environment variables ├── .gitignore # Git ignore file ├── package.json # NPM package configuration ├── package-lock.json # NPM lock file └── README.md # Project documentation
-
 ### Backend
 
 * Node.js
