@@ -20,7 +20,7 @@ const Login = () => {
     }
 
     try {
-      const res = await axios.post('http://localhost:5000/api/auth/login', { email, password });
+      const res = await axios.post('https://talent-labs-test-api.vercel.app/api/auth/login', { email, password });
       console.log(res.data);
       // Set the token in local storage
       localStorage.setItem('token', res.data.token);
@@ -33,7 +33,7 @@ const Login = () => {
 
   const handleGoogleLoginSuccess = async (response) => {
     try {
-      const res = await axios.post('http://localhost:5000/api/auth/google-login', {
+      const res = await axios.post('https://talent-labs-test-api.vercel.app/api/auth/google-login', {
         token: response.credential,  // sending Google token to backend
       });
   
