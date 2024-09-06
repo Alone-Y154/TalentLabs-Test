@@ -27,7 +27,7 @@ function App() {
     const storedToken = localStorage.getItem('token');
     if (storedToken) {
       // Validate the token
-      axios.post('http://talent-labs-test-api.vercel.app/validate-token', { token: storedToken })
+      axios.post('https://talent-labs-test-api.vercel.app/validate-token', { token: storedToken })
         .then((response) => {
           if (response.data.authorized) {
             setToken(storedToken);
